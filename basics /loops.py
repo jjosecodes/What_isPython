@@ -33,10 +33,9 @@ class different_loops:
 
 # -------------------------- #
 # list comprehension 
-
-sq_list = []
-for x in range(1,11):
-    sq_list.append (x+x)
+    def ListComprehension(self, v1 = 1, v2 =  11):
+        sq_list = [x * x for x in range (v1, v2) if x % 2 == 0]
+        print(sq_list)
 
 
 
@@ -44,7 +43,6 @@ for x in range(1,11):
 loop = different_loops()
 #loop.WhileLoop(4)
 #loop.ForLoop(5)
-loop.IfElse()
+#loop.IfElse()
 #loop.ForLetters()
-
-
+loop.ListComprehension(1, 11)
