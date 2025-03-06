@@ -41,8 +41,8 @@ class different_loops:
 
 # ------------run loops------------ #
 loop = different_loops()
-#loop.WhileLoop(4)
-#loop.ForLoop(5)
-#loop.IfElse()
-#loop.ForLetters()
+loop.WhileLoop(4)
+loop.ForLoop(5)
+loop.IfElse()
+loop.ForLetters()
 loop.ListComprehension(1, 11)
