@@ -23,21 +23,28 @@ class different_loops:
                 letter_list.append(a_letter)
         print(letter_list)
 
-
 # selection statements
 # if else lol
-def IfElse(n: int = 16):
-    if n < 0:
-        print(" value is negative loser , try again ")
-    else:
-        print(math.sqrt(n))
+    def IfElse(self,n: int = 16):
+        if n < 0:
+            print(" value is negative loser , try again ")
+        else:
+            print(math.sqrt(n))
+
+# -------------------------- #
+# list comprehension 
+
+sq_list = []
+for x in range(1,11):
+    sq_list.append (x+x)
+
+
 
 # ------------run loops------------ #
 loop = different_loops()
 #loop.WhileLoop(4)
 #loop.ForLoop(5)
-#IfElse()
-loop.ForLetters()
+loop.IfElse()
+#loop.ForLetters()
 
-# -------------------------- #
-# list comprehension 
+
